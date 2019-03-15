@@ -1,6 +1,6 @@
 {
   "name": "si-format",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Configurable-precision SI-unit formatting for the browser",
   "main": "index.js",
   "scripts": {
