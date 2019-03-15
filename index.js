@@ -42,7 +42,8 @@ const MULTIPLIERS = {
 
 const defaultOpts = {
     decimals: 3,
-    space: ' ' // Default: NARROW NO-BREAK SPACE
+    space: ' ', // Default: NARROW NO-BREAK SPACE
+    unit: ''
 };
 
 
@@ -81,7 +82,8 @@ function formatSI (num, opts = {}) {
     return signPrefix +
         parseFloat(sig.toPrecision(getOption(opts, 'decimals'))) +
         getOption(opts, 'space') +
-        PREFIXES[exponent];
+        PREFIXES[exponent] +
+        getOption(opts, 'unit');
 }
 
 // For NodeJS only
